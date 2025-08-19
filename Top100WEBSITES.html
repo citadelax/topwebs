@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Top 100 Websites</title>
+<style>
+  :root {
+    --blue: #1a73e8;
+    --green: #27d07d;
+    --black: #0b0f19;
+    --text: #eaf3ff;
+    --muted: #b8c6dd;
+    --hover-glow: rgba(71,255,176,.3);
+  }
+
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+
+  body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, var(--black), var(--blue) 60%, var(--green) 120%);
+    color: var(--text);
+    padding: 20px;
+    overflow-x: hidden;
+  }
+
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  h1 {
+    font-size: 2.4rem;
+    letter-spacing: 1px;
+  }
+
+  p {
+    color: var(--muted);
+    margin-top: 6px;
+  }
+
+  #searchInput {
+    width: 100%;
+    max-width: 400px;
+    padding: 14px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    font-size: 16px;
+    background: rgba(255,255,255,0.08);
+    color: var(--text);
+    border: 1px solid rgba(255,255,255,.2);
+    backdrop-filter: blur(8px);
+    transition: all 0.3s ease;
+  }
+
+  #searchInput:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 15px var(--hover-glow);
+    outline: none;
+  }
+
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 18px;
+  }
+
+  .website-button {
+    display: block;
+    text-align: center;
+    padding: 14px 18px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 15px;
+    border-radius: 12px;
+    color: var(--text);
+    background: linear-gradient(180deg, rgba(20,35,58,.85), rgba(11,19,35,.85));
+    border: 1px solid rgba(255,255,255,.15);
+    backdrop-filter: blur(6px);
+    transition: all 0.25s ease;
+  }
+
+  .website-button:hover {
+    background: linear-gradient(180deg, var(--blue), var(--green));
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0,0,0,.35), 0 0 0 4px var(--hover-glow);
+    border-color: rgba(71,255,176,.5);
+  }
+
+  footer {
+    text-align: center;
+    margin-top: 40px;
+    color: var(--muted);
+  }
+</style>
+</head>
+<body>
+  <header>
+    <h1> TOP 100 WEBSITES</h1>
+    <p>Internet’s Best Resources</p>
+  </header>
+
+  <input type="text" id="searchInput" placeholder="Search websites...">
+
+  <div class="grid" id="websiteList">
+    <a href="https://www.wolframalpha.com" target="_blank" class="website-button">Wolfram Alpha</a>
+    <a href="https://www.typingclub.com" target="_blank" class="website-button">Typing Club</a>
+    <a href="https://www.codedex.io" target="_blank" class="website-button">Codedex</a>
+    <a href="https://www.ifixit.com" target="_blank" class="website-button">iFixit</a>
+    <a href="https://www.math.libretexts.org" target="_blank" class="website-button">Math Libretexts</a>
+    <a href="https://www.byjus.com" target="_blank" class="website-button">Byju's</a>
+    <a href="https://www.chunkbase.com" target="_blank" class="website-button">Chunkbase</a>
+    <a href="https://www.tailornova.com" target="_blank" class="website-button">Tailornova</a>
+    <a href="https://www.retrogames.com" target="_blank" class="website-button">RetroGames</a>
+    <a href="https://www.pngimg.com" target="_blank" class="website-button">PNG Image</a>
+    <a href="https://www.jitter.video" target="_blank" class="website-button">Jitter Video</a>
+    <a href="https://www.kiddoworksheets.com" target="_blank" class="website-button">Kiddo Worksheets</a>
+    <a href="https://www.fakedetail.com" target="_blank" class="website-button">Fake Details</a>
+    <a href="https://www.musclewiki.com" target="_blank" class="website-button">Muscle Wiki</a>
+    <a href="https://www.logodiffusion.com" target="_blank" class="website-button">Logo Diffusion</a>
+    <a href="https://www.cleanup.pictures" target="_blank" class="website-button">CleanUp Pictures</a>
+    <a href="https://www.tv.garden" target="_blank" class="website-button">TV Garden</a>
+    <a href="https://www.learn-anything.xyz" target="_blank" class="website-button">Learn Anything</a>
+    <a href="https://www.libib.com" target="_blank" class="website-button">Libib</a>
+    <a href="https://www.huggingface.co" target="_blank" class="website-button">Hugging Face</a>
+    <a href="https://www.gamma.app/create" target="_blank" class="website-button">Gamma App</a>
+    <a href="https://www.fakeyou.com" target="_blank" class="website-button">FakeYou</a>
+    <a href="https://www.geo-fs.com" target="_blank" class="website-button">Geo-FS</a>
+    <a href="https://www.citywalki.com" target="_blank" class="website-button">CityWalki</a>
+    <a href="https://www.apob.ai" target="_blank" class="website-button">Apob AI</a>
+    <a href="https://www.neal.fun" target="_blank" class="website-button">Neal Fun</a>
+    <a href="https://www.yarn.com" target="_blank" class="website-button">Yarn Co</a>
+    <a href="https://www.thisoldhouse.com" target="_blank" class="website-button">This Old House</a>
+    <a href="https://www.w3schools.com" target="_blank" class="website-button">W3Schools</a>
+    <a href="https://www.freecodecamp.org" target="_blank" class="website-button">freeCodeCamp</a>
+    <a href="https://www.canva.com" target="_blank" class="website-button">Canva</a>
+    <a href="https://www.remove.bg" target="_blank" class="website-button">Remove.bg</a>
+    <a href="https://tinyurl.com" target="_blank" class="website-button">TinyURL</a>
+    <a href="https://www.pdfescape.com" target="_blank" class="website-button">PDFEscape</a>
+    <a href="https://www.youtube.com" target="_blank" class="website-button">YouTube</a>
+    <a href="https://www.reddit.com" target="_blank" class="website-button">Reddit</a>
+    <a href="https://www.netflix.com" target="_blank" class="website-button">Netflix</a>
+    <a href="https://www.notion.so" target="_blank" class="website-button">Notion</a>
+    <a href="https://www.trello.com" target="_blank" class="website-button">Trello</a>
+    <a href="https://www.todoist.com" target="_blank" class="website-button">Todoist</a>
+    <a href="https://www.medium.com" target="_blank" class="website-button">Medium</a>
+  </div>
+
+  <footer>
+    <p>Created by Nathan Kurgat • Stay Curious, Be Active 🚀</p>
+  </footer>
+
+<script>
+  const searchInput = document.getElementById('searchInput');
+  const websiteList = document.getElementById('websiteList');
+  const links = websiteList.getElementsByTagName('a');
+
+  searchInput.addEventListener('keyup', function () {
+    const filter = searchInput.value.toLowerCase();
+    for (let i = 0; i < links.length; i++) {
+      const txtValue = links[i].textContent || links[i].innerText;
+      links[i].style.display = txtValue.toLowerCase().includes(filter) ? "" : "none";
+    }
+  });
+</script>
+</body>
+</html>
